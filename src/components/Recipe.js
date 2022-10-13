@@ -1,11 +1,13 @@
 import React from 'react'
+import IngredientList from './IngredientList';
 
 const Recipe = (props) => {
     const { 
         name, 
         cookTime, 
         servings, 
-        instructions 
+        instructions,
+        ingredients 
     } = props;
     
   return (
@@ -29,6 +31,12 @@ const Recipe = (props) => {
         <span>Instruction:</span>
         <div>
             {instructions}
+        </div>
+      </div>
+      <div>
+        <span>Ingredients:</span>
+        <div>
+            <IngredientList ingredients={ingredients} />
         </div>
       </div>
     </div>
