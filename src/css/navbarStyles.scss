@@ -1,0 +1,72 @@
+.navigation {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+
+.brand-name {
+    flex: 1;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navigation-menu {
+    margin: 0 5px;
+}
+
+.navigation-menu ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+}
+
+/* increases the surface area of the anchor tag to span more than just the anchor text */
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+
+    &:hover,
+    &:active {
+        color: #2642af;
+    }
+}
+
+.hamburger {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: #212741;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease-in-out;
+    // position: absolute;
+    // right: 25px;
+}
+
+.hamburger:hover {
+    background-color: #2642af;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    // hide the ul element in navigation-menu
+    .navigation-menu ul {
+        display: none;
+    }
+}

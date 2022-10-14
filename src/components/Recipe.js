@@ -2,6 +2,7 @@ import React from 'react'
 import IngredientList from './IngredientList';
 
 const Recipe = (props) => {
+  
     const { 
         name, 
         cookTime, 
