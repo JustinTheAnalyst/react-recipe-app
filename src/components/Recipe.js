@@ -9,7 +9,7 @@ const Recipe = (props) => {
         servings, 
         instructions,
         ingredients 
-    } = props;
+  } = props;
     
   return (
     <div>
