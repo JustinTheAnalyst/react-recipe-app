@@ -1,9 +1,15 @@
 import './App.css';
+import Navbar from './components/Navbar';
 import RecipeList from './components/RecipeList';
+import Tabs from './components/Tabs';
 
 const App = () => {
   return (
-    <RecipeList recipes={sampleRecipes} />
+    <>
+      <Navbar />
+      <Tabs />
+      <RecipeList recipes={sampleRecipes} />
+    </>
   );
 }
 

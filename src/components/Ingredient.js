@@ -1,6 +1,12 @@
 import React from 'react'
 
-const Ingredient = ({ name,amount }) => {
+const Ingredient = (props) => {
+
+  const { 
+    name, 
+    amount,
+  } = props;
+
   return (
     <>
       <span>{name}</span>
