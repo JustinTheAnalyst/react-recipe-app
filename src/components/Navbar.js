@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/navbarStyles.scss';
 
 const Navbar = () => {
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   return (
     <div>
         <nav className="navigation">
             <a href="/" className="brand-name">
                 MacroSoft
             </a>
-            
-            <div className="navigation-menu">
+            <div className={`navigation-menu ${isNavExpanded ? "expanded" : ""}`}>
                 <ul>
                     <li>
                         <a href="/home">Home</a>
@@ -23,7 +24,12 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <button className="hamburger">
+            <button 
+                className="hamburger"
+                onClick={()=>{
+                    setIsNavExpanded(!isNavExpanded);
+                }}
+            >
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"

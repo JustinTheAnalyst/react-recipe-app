@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Tabs />
+      {/* <Tabs /> */}
       <RecipeList recipes={sampleRecipes} />
     </>
   );
