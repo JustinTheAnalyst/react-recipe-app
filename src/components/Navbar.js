@@ -13,10 +13,13 @@ const Navbar = () => {
             <div className={`navigation-menu ${isNavExpanded ? "expanded" : ""}`}>
                 <ul>
                     <li>
-                        <a href="/home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/recipes">Recipes</a>
                     </li>
                     <li>
                         <a href="/contact">Contact</a>
