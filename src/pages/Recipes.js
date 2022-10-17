@@ -4,17 +4,17 @@ import '../css/recipeStyles.scss';
 const Recipes = () => {
     const [recipes, setRecipes] = useState({});
 
-    useEffect(() => {
-        fetch("https://api.airtable.com/v0/appfVTtGtSXx5mj9R/recipes?api_key=keyioVRnOKYch04XY")
-        .then((res) => res.json())
-        .then((data) => {
-        setRecipes(data.records);
-        console.log(data);
-        })
-        .catch((error) => {
-        console.log(error);
-        });
-    }, []);
+    // useEffect(() => {
+    //     fetch("https://api.airtable.com/v0/appfVTtGtSXx5mj9R/recipes?api_key=keyioVRnOKYch04XY")
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //     setRecipes(data.records);
+    //     console.log(data);
+    //     })
+    //     .catch((error) => {
+    //     console.log(error);
+    //     });
+    // }, []);
 
   return (
     <div className='recipe-container'>
