@@ -1,3 +1,10 @@
-@import './styles.css';
-@import './tabStyles.css';
-@import './NotFoundStyles.scss';
+@import-normalize;
+@import 'font.scss';
+@import 'styles.css';
+@import 'tabStyles.css';
+@import 'NotFoundStyles.scss';
+@import 'recipeListStyles.scss';
+
+*, *::before, *::after {
+    font-family: Quicksand, sans-serif;
+}
