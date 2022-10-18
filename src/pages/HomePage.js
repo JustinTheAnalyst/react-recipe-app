@@ -1,12 +1,14 @@
 import React from 'react'
+import PageHeader from '../components/PageHeader';
 import RecipeList from '../components/RecipeList';
 
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <div>
+    <>
+      <PageHeader title="Homepage" />
       <RecipeList recipes={sampleRecipes} />
-    </div>
+    </>
   )
 }
 
@@ -51,4 +53,4 @@ const sampleRecipes = [
   },
 ]
 
-export default Home
+export default HomePage
