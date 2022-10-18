@@ -9,6 +9,10 @@
     cursor: pointer;
 }
 
+.btn:not(:last-child) {
+    margin-right: 5px;
+}
+
 .btn--primary {
     color: white;
     background-color: hsl(200, 100%, 50%);
@@ -24,5 +28,14 @@
 
     &:hover {
         background-color: hsl(120, 50%, 35%);
+    }
+}
+
+.btn--danger {
+    color: white;
+    background-color: hsl(0, 100%, 50%);
+
+    &:hover {
+        background-color: hsl(0, 100%, 35%);
     }
 }
