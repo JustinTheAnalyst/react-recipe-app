@@ -1,19 +1,21 @@
 
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 import Recipes from "./pages/Recipes";
 import Flexbox2Col from "./pages/Flexbox2Col";
+import TabsPage from "./pages/TabsPage";
 
 
 const RouterContainer = () => {
   return (
     <Routes>
-      <Route path="/" exact element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/" exact element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
       <Route path="/recipes" element={<Recipes />} />
       <Route path="/flex2col" element={<Flexbox2Col />} />
+      <Route path="/tabs" element={<TabsPage />} />
     </Routes>
   );
 };

@@ -1,5 +1,10 @@
 .tabs{
     display: flex;
+    list-style: none;
+}
+
+.tabs li {
+    padding-left: 10px;
 }
 
 .tab{

@@ -24,6 +24,9 @@ const Navbar = () => {
             <li>
               <a href="/flex2col">2 Columns</a>
             </li>
+            <li>
+              <a href="/tabs">Tabs</a>
+            </li>
           </ul>
         </div>
 
