@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PageHeader from "../components/PageHeader";
 import RecipeList from "../components/RecipeList";
 import { v4 as uuidv4 } from "uuid";
+import RecipeEdit from "../components/RecipeEdit";
 
 export const RecipeContext = React.createContext();
 const LOCAL_STORAGE_KEY = "cookingWithReact.recipes";
@@ -45,7 +46,10 @@ const HomePage = () => {
   return (
     <RecipeContext.Provider value={recipeContextValue}>
       <PageHeader title="Homepage" />
-      <RecipeList recipes={recipes} />
+      <div className="content-wrapper">
+        <RecipeList recipes={recipes} />
+        <RecipeEdit />
+      </div>
     </RecipeContext.Provider>
   );
 };

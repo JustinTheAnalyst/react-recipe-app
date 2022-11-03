@@ -4,6 +4,7 @@
 @import 'recipeListStyles.scss';
 @import 'ingredientListStyles.scss';
 @import 'recipeStyles.scss';
+@import 'recipeEdit.scss';
 
 @import 'styles.scss';
 @import 'tabStyles.scss';
@@ -14,6 +15,7 @@
 *::before,
 *::after {
   font-family: Gotham Rounded, sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -27,4 +29,9 @@ body {
 
 .mr-1 {
   margin-right: 5px;
+}
+
+.content-wrapper {
+  display: flex;
+  word-break: normal;
 }
